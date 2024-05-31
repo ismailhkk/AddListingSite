@@ -1,0 +1,17 @@
+﻿@model List<Urun>
+@{
+    ViewData["Title"] = "AnaSayfa";
+}
+@if (Model != null)
+{
+    <div>
+        @foreach (var item in Model)
+        {
+            <p>@item.Ad - @item.Fiyat - <p>Eklenme Tarihi: @item.EklenmeTarihi</p></p>
+        }
+
+    </div>
+}
+
+
+

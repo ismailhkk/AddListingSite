@@ -1,0 +1,26 @@
+﻿﻿@using AdListingsSite.Models
+
+
+@{
+    ViewData["Title"] = "İlan Ekle";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form action="/Home/UrunEkle" method="post">
+    <div class="form-group">
+        <label for="UrunEkle">Ürün Adı</label>
+        <input type="text" class="form-control" id="UrunEkle" name="Ad" />
+    </div>
+    <div class="form-group">
+        <label for="FiyetEkle">Fiyat</label>
+        <input type="text" class="form-control" id="FiyetEkle" name="Fiyat" />
+    </div>
+    <div>
+        <label for="TarihEkle">Eklenme Tarihi</label>
+        <input type="date" id="TarihEkle" name="EklenmeTarihi">
+    </div>
+
+    <div>
+        <button type="submit">Kaydet</button>
+    </div>
+</form>
